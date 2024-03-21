@@ -1,0 +1,539 @@
+body{
+    background: rgb(1, 1, 39);
+    height:fit-content;
+}
+.advert h2{
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 580px;
+  letter-spacing: 1px;
+}
+.side1{
+    position: fixed;
+    left: 20px;
+    top: 30px;
+    background-color: rgb(33, 33, 70);
+    width: 225px;
+    height:600px;
+    margin: 5px;
+    z-index: 999;
+    border-radius: 20px;
+}
+
+.side1 a{
+    display: block;
+    color: white;
+    letter-spacing: .3rem;
+    text-decoration: none;
+   margin-top: 40px;
+   text-align: center;
+   width: 80%;
+   padding: 10px;
+   margin-left: 10px;
+   border: 2px solid white;
+   border-radius: 20px;
+}
+.side1 a:hover{
+    box-shadow: 0 0 20px white;
+    border-color:transparent;
+}
+
+.search-container{
+    display: none;
+}
+.logo{
+  position: fixed;
+  right: 30px;
+  color: white;
+  width: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(33, 33, 70);
+  text-align: center;
+  border-radius: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  top: 4%;
+  height: 90px;
+}
+.inputtext{
+  width: 300px;
+  height: 40px;
+  margin: 0;
+  border-radius:20px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.searchbtn{
+border: none;
+
+}
+.searchbtn i{
+  color: white;
+  border:none;
+  font-size: 15px;
+  outline: none;
+}
+.result-item {
+    background-color: rgb(33, 33, 70);
+    width: 520px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    height: 70px;
+    margin-bottom: 10px; 
+  }
+  .fav-item{
+    background-color: rgb(33, 33, 70);
+    width: 520px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    height: 70px;
+    margin-bottom: 10px; 
+  }
+  button{
+    background-color: gray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .results-container{
+    max-width: 530px;
+    position: absolute;
+    top: 5%;
+    left: 290px;
+    display: flex;
+    flex-direction: column;
+  }
+  .favourite-container{
+    max-width: 530px;
+    position: absolute;
+    top: -10%;
+    left: 290px;
+    display: flex;
+    flex-direction: column;
+  }
+  .currentplay{
+    text-align: center;
+    width: 370px;
+    height: 380px;
+    background-color: rgb(33, 33, 70);
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    border-radius: 20px;
+  }
+  .currentplay img{
+    width:370px;
+    height: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .currentplay h2{
+    color: white;
+    font-size: medium;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex: 1;
+    margin-left: 40px;
+  }
+.heartButton{
+  color: white;
+  padding: 0;
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  font-size:24px;
+  cursor: pointer;
+}
+  h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 300px;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .result-item img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .result-item .title {
+    width: 280px;
+  }
+  .result-item .button {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 50px
+  }
+  .favourite-container{
+    display: none;
+  }
+
+  .result-item .playButton {
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .result-item .playButton:hover{
+    border: 2px solid white;
+  }
+  .result-item audio{
+    display: none;
+  }
+  .fav-item img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .fav-item .title {
+    width: 280px;
+  }
+  .fav-item .button {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .button .favourite{
+  color:green 
+  }
+  .fav-item .playButton {
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .fav-item .playButton:hover{
+    border: 2px solid white;
+  }
+  .fav-item audio{
+    display: none;
+  }
+  .advert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .button i{
+    margin: 20px;
+  }
+
+@media(max-width:475px){
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #homeLink,#favouritesLink,.search-container{
+    display: none;
+  }
+
+.home1{
+  margin-left: 0px;
+  margin-right: 10px;
+}
+.fav1{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.home1,.fav1,.search-container{
+  display: none;
+}
+.results-container,.favourite-container {
+  width: 100%;
+  max-height: calc(100vh - 50px);
+  overflow-y: auto;
+  margin-bottom: 70px;
+  padding-bottom: 50px;
+  background-color:transparent;
+}
+.results-container::-webkit-scrollbar,.favourite-container::-webkit-scrollbar{
+  width: 0;
+}
+.side1 {
+  position: fixed;
+  bottom: 50px; /* Updated to bottom */
+  right: 50px; /* Adjust as needed */
+  cursor: move;
+  height: fit-content;
+  width: fit-content;
+  border: 2px solid rgb(33, 33, 70);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1000;
+  flex-direction: column;
+  top: 11px;
+  left: 0;
+  margin: 0;
+} 
+.search-container button{
+  display: none;
+}
+.side1 a{
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  height: 50px;
+  width: 50px;
+  text-align: bottom;
+  float: left;
+  font-size:18px;
+}
+.side1 a:hover{
+  color: green;
+}
+  .results-container {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    max-height: calc(fit-content + 400px);
+    float: left;
+}
+
+.result-item {
+  height: 60px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width:100%;
+}
+
+.result-item img {
+    width: 60px;
+    height: 55px;
+    margin-right: 10px;
+}
+.heartButton{
+  margin-bottom: 10px;
+}
+.result-item h2 {
+  width: 100%;
+  min-width: 65px;
+  max-width: 120px;
+  margin-right: 0px;
+}
+.result-item .button{
+  margin-left: 10px;
+}
+.advert{
+  position: fixed;
+  left: 40px;
+}
+.results-container .advert h2{
+  font-size: 18px;
+}
+  .currentplay {
+    border-radius:0;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 65px;
+    width:100%;
+    margin-top: 2px;
+    align-items: center;
+    clear: both;
+    
+}
+
+  .currentplay img{
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    left: 0;
+    margin-right: 30px;
+    border-radius: 0;
+
+  }
+  .currentplay h2{
+    margin-left: 60px;
+    width: 100px;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+  .search1{
+    box-shadow: 0 0 20px white;
+  }
+  .logo {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+}
+
+  .favourite-container{
+    position: absolute;
+    width:100%;
+    top: 70px;
+    right: 0;
+    max-height: calc(fit-content + 400px);
+    left: 0px;
+    right: 10px;
+  }
+  .fav-item {
+    height: 60px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width:100%;
+  }
+  .fav-item h2{
+    width: 100%;
+    max-width: 130px;
+  }
+  .fav-item img{
+    width: 60px;
+    height: 55px;
+    margin-right: 10px;
+  }
+  .fav-item .button i{
+    margin: 1px;
+  }
+  .search-container .inputtext{
+    width: 80%;
+    position: fixed;
+    right: 10px;
+    top: 17px;
+  }
+}
+@media (min-width:990px){
+  .side1{
+    position:fixed;
+    top: 8%;
+    height: 285px;
+  }
+  .search1::after{
+    content: 'Search';
+    font-size: 20;
+    font-weight: bold;
+  }
+  .home1::after{
+    content: 'Home';
+    font-size: 20;
+    font-weight: bold;
+  }
+  .fav1::after{
+    content: 'Favourites';
+    font-size: 20;
+    font-weight: bold;
+  }
+  .favourite-container .advert{
+    position: absolute;
+    top: -100%;
+    background-color: rgb(33, 33, 70);
+    height: 60px;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    border-top-width: 100px;
+    border-radius: 20px;
+    width: 520px;
+  }
+  .favourite-container{
+    top: 5%;
+    height: max-content;
+  }
+  .side1{
+    height: fit-content;
+  }
+  #favouritesLink,#homeLink{
+    display: none;
+  }
+  .fav1{
+    margin-bottom: 40px;
+  }
+  .search1{
+    margin-bottom: px;
+  }
+}
+@media (min-width:476px) and (max-width:990px){
+  .logo{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 2px;
+    z-index: 999;
+  }
+  .side1{
+    width: 220px;
+    height: fit-content;
+    position: fixed;
+    top: 18%;
+    left: 2px;
+  }
+  .side1 a{
+    width: 90%;
+    margin: 0;
+    margin: 15px 1px 15px 1px;
+
+  }
+  .search1::after{
+    content: 'Search';
+    font-size: 20;
+    font-weight: bold;
+  }
+  .home1::after{
+    content: 'Home';
+    font-size: 20;
+    font-weight: bold;
+  }
+  .fav1::after{
+    content: 'Favourites';
+    font-size: 20;
+    font-weight: bold;
+  }
+  .results-container{
+    margin-top: 100px;
+  }
+  .favourite-container{
+    margin-top: 50px;
+  }
+  .favourite-container .advert{
+    margin-bottom: -70px;
+  }
+  .currentplay{
+    width:220px;
+    height: 210px;
+    text-align: left;
+    position: fixed;
+    left: 10px;
+    bottom: 3px;
+  }
+  .currentplay h2{
+    margin-left:10px;
+    margin-bottom: -20px;
+    width: 210px;
+  }
+  .currentplay img{
+    width: 220px;
+    height: 160px;
+  }
+}
